@@ -181,7 +181,3 @@ python src/evaluate.py --model checkpoints/gan_model.h5
 - Tavallaee et al., [A Detailed Analysis of the KDD CUP 99 Data Set](https://www.researchgate.net/publication/220565197) (NSL-KDD paper)
 
 ---
-
-## License
-
-MIT
