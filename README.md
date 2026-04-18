@@ -21,11 +21,6 @@ The core idea: train an encoder-decoder (autoencoder) adversarially on clean tra
 - During training: **only normal samples are used**
 - At test time: mixed normal + attack samples
 
-```
-data/
-├── KDDTrain+.txt
-└── KDDTest+.txt
-```
 
 You can get the dataset from the [Canadian Institute for Cybersecurity](https://www.unb.ca/cic/datasets/nsl.html).
 
@@ -139,23 +134,6 @@ python src/evaluate.py --model checkpoints/gan_model.h5
 
 ---
 
-## Project structure
-
-```
-├── data/                  # raw dataset files
-├── src/
-│   ├── preprocess.py      # data loading and feature engineering
-│   ├── model.py           # encoder, decoder, discriminator definitions
-│   ├── train.py           # training loop
-│   └── evaluate.py        # scoring, threshold, metrics
-├── notebooks/
-│   └── exploration.ipynb  # EDA and visualization
-├── checkpoints/           # saved model weights
-├── requirements.txt
-└── README.md
-```
-
----
 
 ## Known issues / limitations
 
